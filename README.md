@@ -13,7 +13,7 @@ Using Data Science methods:
   - Feature engineering
 - Data splitting to:
   - training data
-  - testubg data
+  - testing data
 - Linear Regession
 - Ridge Regression
 - Decision Tree
