@@ -1,4 +1,4 @@
-# ai_engineering_projects
+# AI-Machine Learning Projects
 Applied Data Science Program: Leveraging AI for Effective Decision-Making
 
 ## Capston Project: Used Car Price Prediction Model
