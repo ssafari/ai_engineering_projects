@@ -9,7 +9,7 @@ parameters no longer change significantly, and the MSE is minimized.
 
 ### Cost function in linear regression:
 
-- *** Mean Square Error (MSE) ***
+- ***Mean Square Error (MSE)***
 - Mean Absolute Error (MAE)
 - Root Mean Squared Error (RMSE)
 - R-squared (Coefficient of Determination) - It is a widely used metric for evaluating the explanatory power of a linear regression model. It is useful for linear regression models where the relationship between the variables is non-linear.
