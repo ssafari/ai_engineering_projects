@@ -10,9 +10,9 @@ parameters no longer change significantly, and the MSE is minimized.
 ### Cost function in linear regression:
 
 - ***Mean Square Error (MSE)***
-- Mean Absolute Error (MAE)
-- Root Mean Squared Error (RMSE)
-- R-squared (Coefficient of Determination) - It is a widely used metric for evaluating the explanatory power of a linear regression model. It is useful for linear regression models where the relationship between the variables is non-linear.
+- ***Mean Absolute Error (MAE)*** - useful when dealing with outliers or when we want a simpler interpretation of error.
+- ***Root Mean Squared Error (RMSE)*** - measure of error that maintains sensitivity to larger mistakes making it suitable for many regression tasks.
+- ***R-squared (Coefficient of Determination)*** - It is a widely used metric for evaluating the explanatory power of a linear regression model. It is useful for linear regression models where the relationship between the variables is non-linear.
 
 ### Capston Project: Used Car Price Prediction Model
 Creating an ML Model for used car market to predict the used car prices.
