@@ -54,9 +54,9 @@ regularization L1, L2 techniques.  Use cross-validation techniques to evaluate m
   - K-Fold cross-validation (not used in these projects)
   - LOOCV cross-validation (not used in these projects)
 - Creating the model and fitting it with splited data
-- Regularizations:
-  - L1: LASSO
-  - L2: Ridge Regression
+- Regularizations: (Bias Variance Trade Off - Overfitting and Underfitting)
+  - L1: LASSO - for effectively performing feature selection by removing irrelevant features from the mode in high-dimentional data
+  - L2: Ridge Regression - to prevent overfitting and improve model stability.
 - Decision Tree
 - Random Forest
 - Statical Analysis
