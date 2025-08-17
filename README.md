@@ -1,7 +1,8 @@
-# AI-Machine Learning Projects
+# AI Machine Learning Projects
 Applied Data Science Program: Leveraging AI for Effective Decision-Making
 
-2 projects are presented in this repository, part of the learning Aplied Data Science Program:
+2 projects are presented in this repository, part of the learning Applied Data Science Program.
+Both projects are linear regression and supervised learning predciting continues values.
 
 ### Capston Project: Used Car Price Prediction Model
 Creating an ML Model for used car market to predict the used car prices.
@@ -20,7 +21,8 @@ using the most common optimization technique the gradient descent.  After multip
 parameters no longer change significantly, and the MSE is minimized.
 
 ## Methods and Techniques used to achieve building the final model:
-For large dataset the common approche is to start by understanding and preparing data, In other words making data clean and suitable for ML algorithm to use. 
+For large dataset the common approche is to start by understanding and preparing data, such as the type of features, their correlation, and the target variable, 
+for performing feature selection. In other words making data clean and suitable for ML algorithm to use it.  
 
 - Data analysis
   - Understanding predicted values and independent values 
@@ -31,7 +33,7 @@ For large dataset the common approche is to start by understanding and preparing
 - EDA:
   - Univariate data analysis
   - Bevariate data analysis
-  - Correlation analysis using heatmap
+  - Correlation analysis and finding feature importance using heatmap
   - Feature engineering
 - Data splitting to:
   - training data
