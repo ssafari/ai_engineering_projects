@@ -20,14 +20,15 @@ squared error across all data points. The smaller the MSE, the better the modelâ
 using the most common optimization technique the gradient descent.  After multiple iterations of gradient descent, the final model converges, meaning the 
 parameters no longer change significantly, and the MSE is minimized.
 
-## Methods and Techniques used to achieve building the final model:
+## Data Analysis Techniques
+
 For large dataset the common approche is to start by understanding and preparing data, such as the type of features, their correlation, and the target variable, 
-for performing feature selection. In other words making data clean and suitable for ML algorithm to use it.  
-Once data is ready we can start our model building by splitting data and measuring model performance, until we get the best possible performance.
+for performing feature selection. In other words making data clean and suitable for ML algorithm to use it.  Once data is ready we can start our model building 
+by splitting data and measuring model performance, until we get the best possible performance.
 
-**Steps taken in these project are:**
+**Steps used in these projects to prepare data:**
 
-- Data analysis
+- Data preparation
   - Understanding predicted values and independent values 
   - Remving duplicate values
   - Handling null values in the dataset rows.
@@ -38,16 +39,29 @@ Once data is ready we can start our model building by splitting data and measuri
   - Bevariate data analysis
   - Correlation analysis and finding feature importance using heatmap
   - Feature engineering
-- Data splitting to:
-  - training data
-  - testing data
+
+### Model Performance Techniques
+
+Mode performace can be affected by overfitting or underfitting data. If the model overfits, then it will perform well on the training data but won't be able to reproduce 
+the results on the validation data, and if it underfits, then it will perform poorly on both the training and validation datasets. This creates the possibility of an exchange 
+or tradeoff between bias and variance.  To overcome this problem one way to to split our dataset to large training dataset. Another technique to overcome this issue it to use
+regularization L1, L2 techniques.  Use cross-validation techniques to evaluate model performance on unseen data and identify potential overfitting.
+
+- cross-validation methods
+  - Hold-out cross-validation (splitting data to):
+    - training data
+    - testing data
+  - K-Fold cross-validation (not used in these projects)
+  - LOOCV cross-validation (not used in these projects)
 - Creating the model and fitting it with splited data
-- Ridge Regression
+- Regularizations:
+  - L1: LASSO
+  - L2: Ridge Regression
 - Decision Tree
 - Random Forest
 - Statical Analysis
 
-### A Regression Model runs under assemption:
+### Regression Model Assemptiona
 
 - **Linearity** - linear relation between dependent and independent variables.
 - **No Multicollinearity** - it means no correlation between independent variables, hence, it is necessary to include only non-correlated independent variables in the model.
