@@ -61,10 +61,10 @@ regularization L1, L2 techniques.  Use cross-validation techniques to evaluate m
 - Random Forest
 - Statical Analysis
 
-### Regression Model Assemptiona
+### Regression Model Assemption
 
 - **Linearity** - linear relation between dependent and independent variables.
-- **No Multicollinearity** - it means no correlation between independent variables, hence, it is necessary to include only non-correlated independent variables in the model.
+- **No Multicollinearity** - it means no correlation between independent variables, hence, it is necessary to include only non-correlated independent variables in the model. To detect that we can use VIF method to calculate how much the variance of regression coefecient is inflated.
 - **Homoscedasticity** - the error associated with each data point should be equally spread (meaning “constant variance”) along the best fit line.
 - **No Endogeneity** - it is assumed that the independent variables being correlated to the error terms of the model.
 
