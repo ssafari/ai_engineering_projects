@@ -19,7 +19,7 @@ squared error across all data points. The smaller the MSE, the better the modelâ
 using the most common optimization technique the gradient descent.  After multiple iterations of gradient descent, the final model converges, meaning the 
 parameters no longer change significantly, and the MSE is minimized.
 
-## Methos and Techniques used to achieve building the final model:
+## Methods and Techniques used to achieve building the final model:
 For large dataset the common approche is to start by understanding and preparing data, In other words making data clean and suitable for ML algorithm to use. 
 
 - Data analysis
