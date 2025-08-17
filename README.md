@@ -23,6 +23,9 @@ parameters no longer change significantly, and the MSE is minimized.
 ## Methods and Techniques used to achieve building the final model:
 For large dataset the common approche is to start by understanding and preparing data, such as the type of features, their correlation, and the target variable, 
 for performing feature selection. In other words making data clean and suitable for ML algorithm to use it.  
+Once data is ready we can start our model building by splitting data and measuring model performance, until we get the best possible performance.
+
+**Steps taken in these project are:**
 
 - Data analysis
   - Understanding predicted values and independent values 
