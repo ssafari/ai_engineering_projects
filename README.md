@@ -47,6 +47,12 @@ Once data is ready we can start our model building by splitting data and measuri
 - Random Forest
 - Statical Analysis
 
+### A Regression Model runs under assemption:
+
+- **Linearity** - linear relation between dependent and independent variables.
+- **No Multicollinearity** - it means no correlation between independent variables, hence, it is necessary to include only non-correlated independent variables in the model.
+- **Homoscedasticity** - the error associated with each data point should be equally spread (meaning “constant variance”) along the best fit line.
+- **No Endogeneity** - it is assumed that the independent variables being correlated to the error terms of the model.
 
 ### Cost function types in linear regression:
 Evaluate the model with evaluation metrics
