@@ -11,7 +11,7 @@ The final trained model will be use to predict the parice.
 
 
 
-## Summary
+# Summary
 
 In a linear regression model preparation, the key for finding the best possible model is reducing the error between the predicted values and the actual values. 
 This is done through a loss function calculation of Mean Squared Error (MSE). The goal in these project is to minimize MSE, which means reducing the average 
@@ -19,9 +19,15 @@ squared error across all data points. The smaller the MSE, the better the modelâ
 using the most common optimization technique the gradient descent.  After multiple iterations of gradient descent, the final model converges, meaning the 
 parameters no longer change significantly, and the MSE is minimized.
 
-Techniques used to solve that problem are:
+## Methos and Techniques used to achieve building the final model:
+For large dataset the common approche is to start by understanding and preparing data, In other words making data clean and suitable for ML algorithm to use. 
 
 - Data analysis
+  - Understanding predicted values and independent values 
+  - Remving duplicate values
+  - Handling null values in the dataset rows.
+  - handling categorical data
+  - removing non signigicants data columns which they are not influencing predicted values
 - EDA:
   - Univariate data analysis
   - Bevariate data analysis
@@ -30,7 +36,7 @@ Techniques used to solve that problem are:
 - Data splitting to:
   - training data
   - testing data
-- Linear Regession
+- Creating the model and fitting it with splited data
 - Ridge Regression
 - Decision Tree
 - Random Forest
