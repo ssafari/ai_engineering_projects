@@ -19,6 +19,24 @@ squared error across all data points. The smaller the MSE, the better the modelâ
 using the most common optimization technique the gradient descent.  After multiple iterations of gradient descent, the final model converges, meaning the 
 parameters no longer change significantly, and the MSE is minimized.
 
+Techniques used to solve that problem are:
+
+- Data analysis
+- EDA:
+  - Univariate data analysis
+  - Bevariate data analysis
+  - Correlation analysis using heatmap
+  - Feature engineering
+- Data splitting to:
+  - training data
+  - testing data
+- Linear Regession
+- Ridge Regression
+- Decision Tree
+- Random Forest
+- Statical Analysis
+
+
 ### Cost function types in linear regression:
 Evaluate the model with evaluation metrics
 
@@ -38,22 +56,6 @@ Evaluate the model with evaluation metrics
 
 
 
-Techniques used to solve that problem are:
-
-- Data analysis
-- EDA:
-  - Univariate data analysis
-  - Bevariate data analysis
-  - Correlation analysis using heatmap
-  - Feature engineering
-- Data splitting to:
-  - training data
-  - testing data
-- Linear Regession
-- Ridge Regression
-- Decision Tree
-- Random Forest
-- Statical Analysis
 
 
 
