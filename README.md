@@ -9,6 +9,9 @@ Creating an ML Model for used car market to predict the used car prices.
 Creating an ML Model for predicting house prices using training dataset.
 The final trained model will be use to predict the parice.
 
+
+
+##Summary
 In a linear regression model preparation, the key for finding the best possible model is reducing the error between the predicted values and the actual values. 
 This is done through a loss function calculation of Mean Squared Error (MSE). The goal in these project is to minimize MSE, which means reducing the average 
 squared error across all data points. The smaller the MSE, the better the model’s predictions are. This is where we optimize linear equation parameters by
