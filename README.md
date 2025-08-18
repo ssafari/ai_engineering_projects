@@ -83,6 +83,7 @@ Evaluate the model with evaluation metrics
 - **matplotlib.pyplot**: To create the scatter plot for visualization.
 - **seaborn**: (optional) For better aesthetics.
 - **train_test_split**: To split the dataset into training and testing sets.
+- **statsmodels**: To calculate VIF.
 - **StandardScaler**: For scaling features if necessary (optional at this stage).
 
 
