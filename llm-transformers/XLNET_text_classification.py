@@ -11,12 +11,8 @@ import evaluate
 import random
 
 
-def preprocess_data():
-    data_train = pd.read_csv('./emotions_data/emotion-labels-train.csv') 
-    data_test = pd.read_csv('./emotions_data/emotion-labels-test.csv')
-    data_val = pd.read_csv('./emotions_data/emotion-labels-val.csv')
-
-    data = pd.concat([data_train, data_test, data_val], ignore_index=True)
+def preprocess_data(csv_file: str):
+    data = pd.read_csv(csv_file)
     data['text_clean'] = data['text'].apply(lambda x: clean(x, no_emoji=True))
     data['text_clean'] = data['text_clean'].apply(lambda x: re.sub('@[^\s]+', '', x))
     data.head(20)
@@ -57,7 +53,8 @@ def tokenize_function(tokenizer, examples):
 
 
 def create_embeddings():
-    dataset_dict = preprocess_data()
+    data = './opt/lib/emotions_data.csv'
+    dataset_dict = preprocess_data(data)
     tokenizer = XLNetTokenizer.from_pretrained("xlnet-base-cased")
     tokenized_datasets = dataset_dict.map(tokenize_function, batched=True)
     print(tokenized_datasets)
@@ -101,7 +98,7 @@ def fine_tune_model(tokenizer, small_train_dataset, small_eval_dataset):
     model.save_pretrained("fine_tuned_model")
     fine_tuned_model = XLNetForSequenceClassification.from_pretrained("fine_tuned_model")
     clf = pipeline("text-classification", fine_tuned_model, tokenizer=tokenizer)
-    rand_int = random.randint(0, len(val_split))
-    print(val_split['text_clean'][rand_int])
-    answer = clf(val_split['text_clean'][rand_int], top_k=None)
-    print(answer)
+    # rand_int = random.randint(0, len(val_split))
+    # print(val_split['text_clean'][rand_int])
+    # answer = clf(val_split['text_clean'][rand_int], top_k=None)
+    # print(answer)
